@@ -36,7 +36,9 @@ Route::prefix('user')->group(function (){
     })->name('user.profile');
 });
 
-
+Route::get('/admin/profile',function (){
+    return view('admin.adminHome');
+})->name('admin.profile');
 
 Route::get('admin/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');
 Route::get('/logout', 'LoginController@logout')->name('logout');

@@ -17,6 +17,7 @@ class CreateCommentsTable extends Migration
             $table->id();
             $table->text('body');
             $table->integer('user_id')->index()->unsigned();
+            $table->integer('id_article');
             $table->timestamps();
         });
     }
