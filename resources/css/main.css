@@ -1,0 +1,43 @@
+body {
+    background: url("/img/body_bg.png");
+    font-family: "Cairo", sans-serif;
+    color: white;
+    box-sizing: border-box;
+    }
+
+#header {
+    background: url("/img/breadcrumb.png") no-repeat center;
+    }
+
+.font-title {
+    font-family: "Aclonica", sans-serif;
+    }
+/**/
+.btn-gardiant {
+    background: -moz-linear-gradient(left,
+    rgba(198, 1, 155, 1) 0%,
+    rgba(255, 1, 1, 1) 100%);
+    background: -webkit-linear-gradient(left,
+    rgba(198, 1, 155, 1) 0%,
+    rgba(255, 1, 1, 1) 100%);
+    background: linear-gradient(to right,
+    rgba(198, 1, 155, 1) 0%,
+    rgba(255, 1, 1, 1) 100%);
+    }
+
+.btn-gardiant:hover {
+    background: #ff0101;
+    }
+
+.img-art {
+    min-width: 300px;
+    }
+
+#header {
+    background: url("/img/breadcrumb.png") no-repeat center;
+    }
+
+#lastSecAct {
+    background: url("/img/lastSec.png") no-repeat center;
+    padding: 4em;
+    }
