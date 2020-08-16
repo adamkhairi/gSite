@@ -13,7 +13,7 @@
 
             <h1 class="text-center capitalize text-2xl text-black font-title pt-4">
                 @auth()
-                {{ Auth::user()->name }}
+                    {{ Auth::user()->name }}
                 @endauth
             </h1>
         </div>
@@ -55,9 +55,10 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/3 sm:w-full mx-auto row-span-1 row-start-2 col-span-1 lg:col-span-1 bg-gray-900 px-6 py-4 rounded-md lg:text-left text-center">
+            <div
+                class="w-2/3 sm:w-full mx-auto row-span-1 row-start-2 col-span-1 lg:col-span-1 bg-gray-900 px-4 py-4 rounded-md lg:text-left text-center">
                 <h3 class="pl-2">
-                    <i class="fas fa-play-circle text-2xl"></i> Atelier En Direct</h3>
+                    <i class="fas fa-play-circle text-2xl whitespace-no-wrap"></i> Atelier En Direct</h3>
 
             </div>
 
@@ -68,26 +69,9 @@
                 <h1 class="font-title text-4xl pb-0 text-center">Details</h1>
 
                 <div class="w-full md:w-2/3 lg:w-2/4 mx-auto border border-white md:px-8 rounded-lg">
-                    <!--                Email *******-->
-                    <div class="flex">
-                        <h4 class="pr-6 p-2">Email</h4>
-                        <span class="p-2">:</span>
-                        <p class="p-2">
-                            @auth()
-                                {{ Auth::user()->email }}
-                            @endauth
-                        </p>
-                    </div>
-
-                    <!--                Phone *******-->
-                    <div class="flex">
-                        <h4 class="pr-6 p-2">Tel</h4>
-                        <span class="p-2">:</span>
-                        <p class="p-2">+212 6 66 66 66 66</p>
-                    </div>
 
                     <!--                Username *******-->
-                    <div class="flex">
+                    <div class="flex items-center justify-center">
                         <h4 class="pr-6 p-2">Nom d'utilisateur</h4>
                         <span class="p-2">:</span>
                         <p class="p-2">
@@ -97,11 +81,57 @@
                         </p>
                     </div>
 
-                    <!--                Address *******-->
-                    <div class="flex">
-                        <h4 class="pr-6 p-2">Adresse Postale</h4>
+                    <!--                Email *******-->
+                    <div class="flex items-center justify-center">
+                        <h4 class="pr-6 p-2">Email</h4>
                         <span class="p-2">:</span>
                         <p class="p-2">
+                            @auth()
+                                {{ Auth::user()->email }}
+                            @endauth
+                        </p>
+                    </div>
+
+                    <!--                Age *******-->
+                    <div class="flex items-center justify-center">
+                        <h4 class="pr-6 p-2">Age</h4>
+                        <span class="p-2">:</span>
+                        <p class="p-2">
+                            @auth()
+                                {{ Auth::user()->age }} Years old
+                            @endauth
+                        </p>
+                    </div>
+
+
+                    <!--                Sex *******-->
+                    {{-- 1 === Male --}}
+                    {{-- 2 === Female--}}
+
+                    <div class="flex items-center justify-center">
+                        <h4 class="pr-6 p-2">Sex</h4>
+                        <span class="p-2">:</span>
+                        <p class="p-2">
+                            @auth()
+                                @if(Auth::user()->genre)
+                                    <i class="fas fa-male"></i>
+                                    Male
+                                @else
+                                    <i class="fas fa-female"></i>
+                                    Female
+                                @endif
+
+
+                            @endauth
+                        </p>
+                    </div>
+
+
+                    <!--                Address *******-->
+                    <div class="flex items-center justify-center">
+                        <h4 class="pr-6 p-2 leading-5">Adresse Postale</h4>
+                        <span class="p-2">:</span>
+                        <p class="p-2 leading-loose">
                             @auth()
                                 {{ Auth::user()->address }}
                             @endauth
@@ -118,6 +148,7 @@
                     </button>
 
                 </div>
+
             </section>
 
             <!--       ****** Notifications ******-->
@@ -164,15 +195,73 @@
 
             <section id="editSec"
                      class=" hidden row-span-2 col-start-2 col-span-4  lg:col-span-5 p-2 bg-gray-900 rounded-md">
-                editttttt
-            </section>
+                <form action="" method="post" class="">
+                    <div class="flex flex-col justify-center items-center">
 
+                        <!--                Username *******-->
+                        <div class="flex items-center justify-center">
+                            <label class="pr-6 p-2" for="name">Nom d'utilisateur</label>
+                            <input type="text" name="name" id="name" value="{{ Auth::user()->name }}">
+
+                        </div>
+
+                        <!--                Email *******-->
+                        <div class="flex items-center justify-center">
+                            <label class="pr-6 p-2" for="email">Email</label>
+                            <input type="text" name="email" id="age" value="{{ Auth::user()->email }}">
+
+                        </div>
+
+                        <!--                birthday *******-->
+                        <div class="flex items-center justify-center">
+                            <label class="pr-6 p-2" for="birthday">Age</label>
+
+                            <input type="date" name="birthday" id="birthday" value="{{ Auth::user()->birthday }}">
+                        </div>
+
+
+                        <!--                Sex *******-->
+                        {{-- 0 === Female--}}
+                        {{-- 1 === Male --}}
+
+                        <div class="flex items-center justify-center">
+                            <label class="pr-6 p-2" for="genre">Sex</label>
+                            <select name="genre" id="genre">
+                                <option selected value="1">Male</option>
+                                <option value="0">Female</option>
+                            </select>
+
+                        </div>
+
+
+                        <!--                Address *******-->
+                        <div class="flex items-center justify-center">
+                            <h4 class="pr-6 p-2 leading-5">Adresse Postale</h4>
+                            <span class="p-2">:</span>
+                            <p class="p-2 leading-loose">
+                                @auth()
+                                    {{ Auth::user()->address }}
+                                @endauth
+                            </p>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn-gardiant px-5 py-2 ">Update</button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </section>
             <section id="msgSec"
                      class=" hidden row-span-2 col-start-2 col-span-4  lg:col-span-5 p-2 bg-gray-900 rounded-md">
                 messaaage
             </section>
-        </div>
 
+        </div>
     </div>
 @endsection
 
+@section('scripts')
+    <script src="{{ asset('js/sideBar.js') }}" defer></script>
+@endsection

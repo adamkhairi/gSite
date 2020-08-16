@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -42,6 +43,10 @@ class User extends Authenticatable
 
 //        if (\http\Client\Curl\User::)
 //        return $this->where('is_admin',1)->first();
+    }
+    public function getAgeAttribute()
+    {
+        return Carbon::parse($this->attributes['birthday'])->age;
     }
 
 }

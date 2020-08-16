@@ -81,78 +81,67 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/main.js":
-/*!******************************!*\
-  !*** ./resources/js/main.js ***!
-  \******************************/
+/***/ "./resources/js/sideBar.js":
+/*!*********************************!*\
+  !*** ./resources/js/sideBar.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// var owl = $('.owl-carousel');
-// owl.owlCarousel({
-//
-// 	center: true,
-// 	items: 6,
-// 	loop: true,
-// 	margin: 10,
-// 	autoplay: true,
-// 	responsive: {
-// 		0: {
-// 			items: 1
-// 		},
-// 		600: {
-// 			items: 2
-// 		},
-// 		1000: {
-// 			items: 3
-// 		}
-// 	},
-//
-// 	autoplayTimeout: 3000,
-//
-//
-//
-// 	autoplayHoverPause: true
-// });
-// $('.play').on('click', function () {
-// 	owl.trigger('play.owl.autoplay', [1000])
-// });
-// $('.stop').on('click', function () {
-// 	owl.trigger('stop.owl.autoplay')
-// });
-// ***********
-$(window).scroll(function (e) {
-  // $("#nav").addClass('bg-red-700');
-  var offsetRange = $(window).height() / 3,
-      offsetTop = $(window).scrollTop() + offsetRange + $("#header").outerHeight(true),
-      offsetBottom = offsetTop + offsetRange;
-  $("#exporevideo").each(function () {
-    var y1 = $(this).offset().top;
-    var y2 = offsetTop;
+// Buttons
+var edit_btn = document.getElementById('p-edit-btn'),
+    detail_btn = document.getElementById('p-detail-btn'),
+    notify_btn = document.getElementById('p-notify-btn'),
+    msg_btn = document.getElementById('p-msg-btn'); // Sections
 
-    if (y1 + $(this).outerHeight(true) < y2 || y1 > offsetBottom) {
-      this.pause();
-    } else {
-      this.play();
-    }
-  });
+var detailSec = document.getElementById('detailSec'),
+    editSec = document.getElementById('editSec'),
+    notifySec = document.getElementById('notifSec'),
+    msgSec = document.getElementById('msgSec'); //
+
+detail_btn.addEventListener('click', function (event) {
+  detailSec.classList.remove('hidden');
+  notifySec.classList.add('hidden');
+  editSec.classList.add('hidden');
+  msgSec.classList.add('hidden');
+}); //
+
+edit_btn.addEventListener('click', function (event) {
+  detailSec.classList.add('hidden');
+  editSec.classList.remove('hidden');
+  notifySec.classList.add('hidden');
+  msgSec.classList.add('hidden');
+}); //
+
+notify_btn.addEventListener('click', function (event) {
+  detailSec.classList.add('hidden');
+  editSec.classList.add('hidden');
+  notifySec.classList.remove('hidden');
+  msgSec.classList.add('hidden');
+}); //
+
+msg_btn.addEventListener('click', function (event) {
+  detailSec.classList.add('hidden');
+  editSec.classList.add('hidden');
+  notifySec.classList.add('hidden');
+  msgSec.classList.remove('hidden');
 });
 
 /***/ }),
 
-/***/ 1:
-/*!************************************!*\
-  !*** multi ./resources/js/main.js ***!
-  \************************************/
+/***/ 3:
+/*!***************************************!*\
+  !*** multi ./resources/js/sideBar.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\gSite\resources\js\main.js */"./resources/js/main.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\gSite\resources\js\sideBar.js */"./resources/js/sideBar.js");
 
 
 /***/ })

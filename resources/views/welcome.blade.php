@@ -16,13 +16,13 @@
             </div>
             <div class="my-4">
                 @if (Route::has('login'))
-                    <a href="{{ route('login') }}" id="loginBtnHero" class="btn-gardiant px-4 py-1 m-2 rounded">Se
+                    <a href="{{ route('login') }}" id="loginBtnHero" class="btn-gardiant px-4 py-1 m-2 rounded whitespace-no-wrap">Se
                         connecter</a>
 
 
                 @endif
                 @if (Route::has('register'))
-                    <a href="{{ route('register') }}" id="registerBtn" class="btn-gardiant px-4 py-1 m-2 rounded">Inscrivez-vous</a>
+                    <a href="{{ route('register') }}" id="registerBtn" class="btn-gardiant px-4 py-1 m-2 rounded whitespace-no-wrap">Inscrivez-vous</a>
 
                 @endif
             </div>

@@ -61,8 +61,10 @@
 @yield('content2')
 @yield('content3')
 @yield('content4')
-@yield('content5')
+
 
 @include('layouts.footer')
+@yield('scripts')
+
 </body>
 </html>
