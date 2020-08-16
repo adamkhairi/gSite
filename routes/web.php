@@ -1,5 +1,6 @@
 <?php
 
+use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -62,6 +63,8 @@ Route::post('/post/search', [
     'uses' => 'ArticleController@search',
     'as' => 'posts.search'
 ]);
+
+
 
 Route::post('article/{id}/comment/add', [
     'uses' => 'CommentsController@store',

@@ -23,9 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adminHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adminHome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/update.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +219,7 @@
       <updated>1597505095112</updated>
       <workItem from="1597505096365" duration="12424000" />
       <workItem from="1597526349120" duration="2583000" />
-      <workItem from="1597589420896" duration="10102000" />
+      <workItem from="1597589420896" duration="12846000" />
     </task>
     <servers />
   </component>
@@ -245,10 +246,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1149" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597538227185" />
-    <state x="738" y="289" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597598744814">
+    <state x="738" y="289" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597606542349">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="738" y="289" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597598744814" />
+    <state x="738" y="289" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597606542349" />
     <state width="907" height="186" key="GridCell.Tab.0.bottom" timestamp="1597535988805">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

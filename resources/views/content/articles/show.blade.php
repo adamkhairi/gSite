@@ -28,6 +28,8 @@
                         class="inline-grid max-w-xs sm:max-w-xs lg:max-w-lg lg:flex bg-black rounded-lg border shadow-lg pb-6 lg:pb-0">
                         <div class="w-full lg:w-2/3 p-4">
                             <h1>{{$comment->user_id}}</h1>
+
+                            <h1>{{$comment->getUser($comment->user_id)->name}}</h1>
                             <div class="inline-grid">
 
                                 <p class="text-sm my-4 text-white opacity-75">{{($comment->body)}}</p>

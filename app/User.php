@@ -43,4 +43,5 @@ class User extends Authenticatable
 //        if (\http\Client\Curl\User::)
 //        return $this->where('is_admin',1)->first();
     }
+
 }

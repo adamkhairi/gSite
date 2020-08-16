@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\comment;
+use App\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -28,5 +29,7 @@ class CommentsController extends Controller
 
         return redirect()->back();
     }
+
+
 
 }
