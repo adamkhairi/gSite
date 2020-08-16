@@ -63,7 +63,7 @@ Route::post('/post/search', [
     'as' => 'posts.search'
 ]);
 
-Route::post('/comment/add', [
+Route::post('article/{id}/comment/add', [
     'uses' => 'CommentsController@store',
     'as' => 'comment.store'
 ]);

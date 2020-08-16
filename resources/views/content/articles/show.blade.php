@@ -27,6 +27,7 @@
                     <div
                         class="inline-grid max-w-xs sm:max-w-xs lg:max-w-lg lg:flex bg-black rounded-lg border shadow-lg pb-6 lg:pb-0">
                         <div class="w-full lg:w-2/3 p-4">
+                            <h1>{{$comment->user_id}}</h1>
                             <div class="inline-grid">
 
                                 <p class="text-sm my-4 text-white opacity-75">{{($comment->body)}}</p>
@@ -41,7 +42,7 @@
                 @auth
                     <div class="flex justify-center flex-wrap items-center">
                         <form class="w-full max-w-lg p-6" method="post" action="
-                            {{route('comment.store')}}
+                            {{route('comment.store',[$post->id])}}
                             ">
 
                             <div class="flex flex-wrap -mx-3 mb-6">

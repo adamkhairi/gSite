@@ -32,11 +32,16 @@
                                 </div>
                             </div>
                         </div>
-<div>
-    <a href="{{route('articles.edit',$post->id)}}">
-        UPDAAATE
-    </a>
-</div>
+                        @auth()
+                            @if(auth()->user()->is_admin)
+                                <div>
+                                    <a class="btn-gardiant rounded-full px-4 py-1"
+                                       href="{{route('articles.edit',$post->id)}}">
+                                        UPDATE
+                                    </a>
+                                </div>
+                            @endif
+                        @endauth
                     </div>
                 @endforeach
                 <div class="bg-gray-200 font-bold flex">
