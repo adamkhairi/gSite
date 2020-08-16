@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 @endsection
 
 @section('content1')

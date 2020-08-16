@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2af095d3-3e56-4b85-8abb-f284e8cf9773" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_16_020006_add_userid_to_article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_16_020130_add_articleid_to_comments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_175608_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_175608_create_articles_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_15_180401_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_15_180401_create_comments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +146,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1g8nTVxDbx0P8rJBpKknPYN7Puv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -145,16 +156,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/content/articles" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\gSite\resources\views\content\articles" />
       <recent name="C:\laragon\www\gSite" />
       <recent name="C:\laragon\www\gSite\public" />
       <recent name="C:\laragon\www\gSite\public\js" />
       <recent name="C:\laragon\www\gSite\resources\views\user" />
-      <recent name="C:\laragon\www\gSite\resources\views\content" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -189,7 +200,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -213,22 +224,34 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1159" y="199" key="#PHP/0.0.1920.1050@0.0.1920.1050" timestamp="1597509826005" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1597526850419">
+    <state x="1149" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597538227185">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597526850419" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1597526850419">
+    <state x="1149" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597538227185" />
+    <state x="738" y="289" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597545908812">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597526850419" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1597526850418">
+    <state x="738" y="289" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597545908812" />
+    <state width="907" height="186" key="GridCell.Tab.0.bottom" timestamp="1597535988805">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597526850418" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1597526850419">
+    <state width="907" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597535988805" />
+    <state width="907" height="186" key="GridCell.Tab.0.center" timestamp="1597535988805">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597526850419" />
+    <state width="907" height="186" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597535988805" />
+    <state width="907" height="186" key="GridCell.Tab.0.left" timestamp="1597535988805">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="907" height="186" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597535988805" />
+    <state width="907" height="186" key="GridCell.Tab.0.right" timestamp="1597535988805">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="907" height="186" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597535988805" />
+    <state x="1099" y="247" width="672" height="677" key="run.anything.popup" timestamp="1597538372735">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1099" y="247" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597538372735" />
     <state x="1103" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1597516276133">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

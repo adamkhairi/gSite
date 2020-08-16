@@ -14,7 +14,7 @@
         </div>
         <div class="mx-3 hover:bg-gray-200 hover:text-gray-900 hover:shadow-lg hover:font-bold px-6 py-1 rounded">
             <a href="
-{{--{{ route('articles.index') }}--}}
+{{ route('articles.index') }}
                 ">Articles</a>
         </div>
         <div class="mx-3 hover:bg-gray-200 hover:text-gray-900 hover:shadow-lg hover:font-bold px-6 py-1 rounded">
@@ -75,7 +75,7 @@
             @endif
         @else
             @if (auth()->check())
-                @if (auth()->user()->isAdmin())
+                @if (auth()->user()->is_admin)
                     <a class="" href="{{ Route('admin.profile') }}">
                         <div class="flex flex-row justify-center items-center">
                             <div class="rounded-full btn-gardiant">
@@ -90,7 +90,9 @@
                         </div>
 
                     </a>
-                    <a href="##" class="m-1 flex-shrink-0"><img src="/img/stream.svg" class="rounded-lg" alt=""></a>
+                    <a href="##" class="m-1 flex-shrink-0">
+                        <img src="/img/stream.svg" class="rounded-lg" alt="">
+                    </a>
 
                 @else
                     <a class="" href="{{ Route('user.profile') }}">

@@ -6,31 +6,31 @@
             <h1 class=" text-center font-title text-5xl pt-24">Profile</h1>
         </div>
 
-
         <div class=" bg-white p-2">
-
 
             <img src="/img/account.png" width="120"
                  class="rounded-full border border-gray-300 shadow-lg bg-white mx-auto text-center  -mt-20" alt="">
 
-            <h1 class="text-center text-2xl text-black font-title pt-4">Full Name</h1>
-
+            <h1 class="text-center capitalize text-2xl text-black font-title pt-4">
+                @auth()
+                {{ Auth::user()->name }}
+                @endauth
+            </h1>
         </div>
 
-
-        <div class="p-8 mt-10 mx-auto flex flex-col md:grid grid-cols-6 gap-4 container">
+        <div class="p-8 mt-10 mx-auto flex flex-col lg:grid grid-cols-6 gap-4 container">
             <!--        ********** Aside *********-->
             <div class="w-2/3 sm:w-full mx-auto  col-span-2 lg:col-span-1 p-2 bg-gray-900 rounded-md ">
                 <div>
                     <h1 class=" text-2xl p-2 lg:pl-4">Personal</h1>
                     <div class="pl-4 lg:pl-6">
 
-                        <div id="p-detail-btn" class="flex items-center hover:bg-black justify-center sm:justify-start">
+                        <div id="p-detail-btn" class="flex items-center hover:bg-black justify-center lg:justify-start">
 
                             <i class="fas fa-user-circle text-2xl p-2"></i>
                             <h3 class="pl-2">Profile</h3>
                         </div>
-                        <div id="p-edit-btn" class="flex items-center hover:bg-black justify-center sm:justify-start">
+                        <div id="p-edit-btn" class="flex items-center hover:bg-black justify-center lg:justify-start">
 
                             <i class="fas fa-arrow-alt-circle-up text-2xl p-2"></i>
                             <h3 class="pl-2">Edit</h3>
@@ -40,13 +40,14 @@
 
                 <div>
                     <h1 class=" text-2xl p-2 lg:pl-4">News</h1>
-                    <div class="pl-4 lg:pl-6">
-                        <div id="p-notify-btn" class="flex items-center hover:bg-black justify-center sm:justify-start">
+                    <div class="pl-4 lg:pl-6 ">
+                        <div id="p-notify-btn" class="flex items-center hover:bg-black justify-center lg:justify-start">
 
                             <i class="fas fa-bell text-2xl p-2"></i>
                             <h3 class="pl-2">Notifications</h3>
                         </div>
-                        <div id="p-msg-btn" class="flex items-center hover:bg-black justify-center sm:justify-start">
+
+                        <div id="p-msg-btn" class="flex items-center hover:bg-black justify-center lg:justify-start">
 
                             <i class="fas fa-envelope text-2xl p-2"></i>
                             <h3 class="pl-2">Messages</h3>
@@ -54,8 +55,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/3 sm:w-full mx-auto row-span-1 row-start-2 col-span-1 lg:col-span-1 p-2 bg-gray-900 rounded-md ">
-                <h3 class="pl-2"><i class="fas fa-play-circle text-2xl"></i> Atelier En Direct</h3>
+            <div class="w-2/3 sm:w-full mx-auto row-span-1 row-start-2 col-span-1 lg:col-span-1 bg-gray-900 px-6 py-4 rounded-md lg:text-left text-center">
+                <h3 class="pl-2">
+                    <i class="fas fa-play-circle text-2xl"></i> Atelier En Direct</h3>
 
             </div>
 
@@ -70,7 +72,11 @@
                     <div class="flex">
                         <h4 class="pr-6 p-2">Email</h4>
                         <span class="p-2">:</span>
-                        <p class="p-2">Example@email.com</p>
+                        <p class="p-2">
+                            @auth()
+                                {{ Auth::user()->email }}
+                            @endauth
+                        </p>
                     </div>
 
                     <!--                Phone *******-->
@@ -84,14 +90,22 @@
                     <div class="flex">
                         <h4 class="pr-6 p-2">Nom d'utilisateur</h4>
                         <span class="p-2">:</span>
-                        <p class="p-2">Username</p>
+                        <p class="p-2">
+                            @auth()
+                                {{ Auth::user()->name }}
+                            @endauth
+                        </p>
                     </div>
 
                     <!--                Address *******-->
                     <div class="flex">
                         <h4 class="pr-6 p-2">Adresse Postale</h4>
                         <span class="p-2">:</span>
-                        <p class="p-2">Adresse, rue, ville, Payer</p>
+                        <p class="p-2">
+                            @auth()
+                                {{ Auth::user()->address }}
+                            @endauth
+                        </p>
                     </div>
                 </div>
 

@@ -36,11 +36,15 @@ Route::prefix('user')->group(function (){
     })->name('user.profile');
 });
 
-Route::get('/admin/profile',function (){
-    return view('admin.adminHome');
-})->name('admin.profile');
+Route::prefix('Admin')->group(function () {
 
-Route::get('admin/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');
+    Route::get('/profile', function () {
+        return view('admin.adminHome');
+    })->name('admin.profile');
+
+    Route::get('/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');
+
+});
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
-Route::resource('/articles', 'PostsController');
+Route::resource('articles', 'ArticleController');

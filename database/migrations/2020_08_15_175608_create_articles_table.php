@@ -18,9 +18,11 @@ class CreateArticlesTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->string('img');
-            $table->integer('user_id')->index()->unsigned();
-            $table->integer('category_id')->index()->unsigned();
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('category_id');
             $table->timestamps();
+
+
         });
     }
 
