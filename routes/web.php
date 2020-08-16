@@ -47,4 +47,23 @@ Route::prefix('Admin')->group(function () {
 });
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
-Route::resource('articles', 'ArticleController');
+//ARTICLE
+Route::resource('/articles', 'ArticleController');
+
+Route::post('/article/{id}/edit', [
+    'uses' => 'ArticleController@update',
+    'as' => 'article.update'
+]);
+Route::get('/article/{id}/delete', [
+    'uses' => 'ArticleController@destroy',
+    'as' => 'article.delete'
+]);
+Route::post('/post/search', [
+    'uses' => 'ArticleController@search',
+    'as' => 'posts.search'
+]);
+
+Route::post('/comment/add', [
+    'uses' => 'CommentsController@store',
+    'as' => 'comment.store'
+]);

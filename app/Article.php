@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+
     protected $fillable = [
         'title', 'body', 'img', 'user_id', 'category_id'
     ];
-
 
     public function comments()
     {
@@ -22,4 +22,5 @@ class Article extends Model
         return $this->beLongsTo('App\User');
 
     }
+
 }

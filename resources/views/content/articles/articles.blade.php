@@ -12,31 +12,35 @@
 
         <div class="flex justify-center flex-wrap">
             <div class="flex flex-col md:w-2/2 w-100 px-6 h-full overflow-hidden  ">
-                @foreach ($articles as $article)
+                @foreach ($posts as $post)
                     <div class="pb-4 col-span-8 ">
                         <div class="max-w-xl rounded overflow-hidden shadow-lg bg-white">
-                            <a href="{{ route('articles.show',$article->id) }}">
-                                <img class="w-full" src="{{ $article->img }}" alt="Sunset in the mountains">
+                            <a href="{{ route('articles.show',$post->id) }}">
+                                <img class="w-full" src="{{ $post->img }}" alt="Sunset in the mountains">
                             </a>
                             <div class="px-6 py-4">
 
                                 <div class="relative">
                                     <h1 class="font-title text-2xl mb-2 text-black">
-                                        {{ $article->title }}
+                                        {{ $post->title }}
                                     </h1>
                                     <p class="pr-6 text-black overflow-hidden">
-                                        {{$article->body}}
+                                        {{$post->body}}
                                     </p>
                                     <a class="float-right btn-gardiant rounded px-4 py-1 m-2 relative bottom-0 right-0"
-                                       href="{{ route('articles.show',$article->id) }}">voir plus...</a>
+                                       href="{{ route('articles.show',$post->id) }}">voir plus...</a>
                                 </div>
                             </div>
                         </div>
-
+<div>
+    <a href="{{route('articles.edit',$post->id)}}">
+        UPDAAATE
+    </a>
+</div>
                     </div>
                 @endforeach
                 <div class="bg-gray-200 font-bold flex">
-                    {!! $articles->links() !!}
+                    {!! $posts->links() !!}
                 </div>
             </div>
 
