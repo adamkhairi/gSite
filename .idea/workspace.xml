@@ -20,16 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2af095d3-3e56-4b85-8abb-f284e8cf9773" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/sideBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +39,13 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/adamkhairi/gSite" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
@@ -222,6 +223,7 @@
       <workItem from="1597505096365" duration="12424000" />
       <workItem from="1597526349120" duration="2583000" />
       <workItem from="1597589420896" duration="16145000" />
+      <workItem from="1597679490473" duration="5072000" />
     </task>
     <servers />
   </component>
@@ -238,8 +240,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Single Articles page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Single Articles page" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="716" y="345" key="#Notifications" timestamp="1597685410683">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="716" y="345" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1597685410683" />
     <state x="1159" y="199" key="#PHP" timestamp="1597509826005">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -252,6 +263,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="738" y="289" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597606542349" />
+    <state x="184" y="87" key="DiffContextDialog" timestamp="1597685496485">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="184" y="87" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597685496485" />
     <state width="916" height="188" key="GridCell.Tab.0.bottom" timestamp="1597610903030">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -268,6 +283,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="916" height="188" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597610903030" />
+    <state x="792" y="264" key="RollbackChangesDialog" timestamp="1597685497984">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="792" y="264" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597685497984" />
     <state x="1099" y="247" width="672" height="677" key="run.anything.popup" timestamp="1597538372735">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

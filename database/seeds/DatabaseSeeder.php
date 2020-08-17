@@ -36,11 +36,11 @@ class DatabaseSeeder extends Seeder
 //                'genre' => $faker->boolean,
 //                'password' => Hash::make('123456')
 //            ]);
-            Comment::create([
-                'body' => $faker->sentence,
-                'user_id' => value(1),
-                'article_id' => value(1),
-            ]);
+//            Comment::create([
+//                'body' => $faker->sentence,
+//                'user_id' => value(1),
+//                'article_id' => value(1),
+//            ]);
 //            Category::create([
 //                'name' => $faker->colorName,
 //
