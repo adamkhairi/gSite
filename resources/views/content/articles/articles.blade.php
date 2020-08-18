@@ -7,13 +7,24 @@
         <h1 class=" text-center font-title text-5xl pt-24">Articles</h1>
     </div>
 
+    @auth()
+        @if(auth()->user()->is_admin)
+            <div class="flex justify-center items-center">
+
+                <a href="{{ route('articles.create') }}" class="btn-gardiant px-4 py-1">
+                    Add Article
+                </a><a href=""></a><a href=""></a>
+            </div>
+        @endif
+    @endauth
+
 
     <section class="w-full mt-16 w-40">
 
         <div class="flex justify-center flex-wrap">
             <div class="flex flex-col md:w-2/2 w-100 px-6 h-full overflow-hidden  ">
                 @foreach ($posts as $post)
-                    <div class="pb-4 col-span-8 ">
+                    <div class="pb-4 col-span-8 select-none">
                         <div class="max-w-xl rounded overflow-hidden shadow-lg bg-white">
                             <a href="{{ route('articles.show',$post->id) }}">
                                 <img class="w-full" src="{{ $post->img }}" alt="Sunset in the mountains">
@@ -21,9 +32,12 @@
                             <div class="px-6 py-4">
 
                                 <div class="relative">
-                                    <h1 class="font-title text-2xl mb-2 text-black">
-                                        {{ $post->title }}
-                                    </h1>
+                                    <a href="{{ route('articles.show',$post->id) }}">
+
+                                        <h1 class="font-title text-2xl mb-2 text-black">
+                                            {{ $post->title }}
+                                        </h1>
+                                    </a>
                                     <p class="pr-6 text-black overflow-hidden">
                                         {{$post->body}}
                                     </p>

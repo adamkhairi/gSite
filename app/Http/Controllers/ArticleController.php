@@ -94,6 +94,7 @@ class ArticleController extends Controller
         $post = Article::findOrFail($id);
 
         $lastAddedPosts = Article::orderBy('created_at', 'DESC')->take(3)->get();
+
         return view('content.articles.show', compact('post', 'lastAddedPosts'));
 
 //        $post = Article::findOrFail($id);
@@ -104,7 +105,6 @@ class ArticleController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param Article $article
      * @param int $id
      * @return Application|Factory|Response|View
      */

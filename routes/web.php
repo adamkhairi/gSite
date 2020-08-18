@@ -51,18 +51,18 @@ Route::get('/logout', 'LoginController@logout')->name('logout');
 //ARTICLE
 Route::resource('/articles', 'ArticleController');
 
-Route::post('/article/{id}/edit', [
-    'uses' => 'ArticleController@update',
-    'as' => 'article.update'
-]);
-Route::get('/article/{id}/delete', [
-    'uses' => 'ArticleController@destroy',
-    'as' => 'article.delete'
-]);
-Route::post('/post/search', [
-    'uses' => 'ArticleController@search',
-    'as' => 'posts.search'
-]);
+//Route::post('/article/{id}/edit', [
+//    'uses' => 'ArticleController@update',
+//    'as' => 'article.update'
+//]);
+//Route::get('/article/{id}/delete', [
+//    'uses' => 'ArticleController@destroy',
+//    'as' => 'article.delete'
+//]);
+//Route::post('/article/search', [
+//    'uses' => 'ArticleController@search',
+//    'as' => 'article.search'
+//]);
 
 
 

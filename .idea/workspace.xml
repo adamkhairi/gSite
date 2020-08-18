@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2af095d3-3e56-4b85-8abb-f284e8cf9773" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,8 +224,17 @@
       <workItem from="1597505096365" duration="12424000" />
       <workItem from="1597526349120" duration="2583000" />
       <workItem from="1597589420896" duration="16145000" />
-      <workItem from="1597679490473" duration="5072000" />
+      <workItem from="1597679490473" duration="6003000" />
+      <workItem from="1597766578582" duration="5340000" />
     </task>
+    <task id="LOCAL-00001" summary="Single Articles page">
+      <created>1597695383395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597695383395</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +297,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="792" y="264" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597685497984" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1597695385425">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597695385425" />
     <state x="1099" y="247" width="672" height="677" key="run.anything.popup" timestamp="1597538372735">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
