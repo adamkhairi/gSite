@@ -55,20 +55,23 @@ class ArticleController extends Controller
             'body' => 'required|max:1000 ',
             'img' => 'required',
             'user_id' => Auth::user()->id,
+
+
         ]);
 
         $file = $request->file('img');
         $name = $file->getClientOriginalName();
         $file->move(public_path() . '/img/', $name);
 
-        $post = new Article();
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->img = $name;
-        $post->user_id = Auth::user()->id;
-        $post->category_id = 1;
-        $post->save();
-
+//        $post = new Article();
+//        $post->title = $request->title;
+//        $post->body = $request->body;
+//        $post->img = $name;
+//        $post->user_id = Auth::user()->id;
+//        $post->category_id = 1;
+//        $post->save();
+//        $input = $request->except('_token');
+        Article::create($request->all());
 //        $request->validate([
 //            'title' => 'required|max:100',
 //            'body' => 'required',

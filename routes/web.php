@@ -49,7 +49,13 @@ Route::prefix('Admin')->group(function () {
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //ARTICLE
-Route::resource('/articles', 'ArticleController');
+Route::resource('/articles', 'ArticleController')->names([
+    'index' => 'articles.index',
+    'create' => 'articles.create',
+    'update' => 'articles.update',
+    'edit' => 'articles.edit',
+    'delete' => 'articles.destroy'
+]);
 
 //Route::post('/article/{id}/edit', [
 //    'uses' => 'ArticleController@update',
