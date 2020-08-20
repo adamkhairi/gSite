@@ -22,11 +22,7 @@
     <list default="true" id="2af095d3-3e56-4b85-8abb-f284e8cf9773" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/25_amy_lee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/cutmypic.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,6 +228,7 @@
       <workItem from="1597783500199" duration="126000" />
       <workItem from="1597783646271" duration="799000" />
       <workItem from="1597848615568" duration="4527000" />
+      <workItem from="1597948087547" duration="2902000" />
     </task>
     <task id="LOCAL-00001" summary="Single Articles page">
       <created>1597695383395</created>

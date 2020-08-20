@@ -54,14 +54,24 @@ class ArticleController extends Controller
             'title' => 'required|max:100',
             'body' => 'required|max:1000 ',
             'img' => 'required',
-            'user_id' => Auth::user()->id,
+//            'user_id' => Auth::user()->id,
 
 
         ]);
+//        $post->img = request()->file('img')->store('public/img');
+
 
         $file = $request->file('img');
         $name = $file->getClientOriginalName();
         $file->move(public_path() . '/img/', $name);
+
+        $post = new Article();
+        $post->title = request('title');
+        $post->body = request('body');
+//        $post->img = $name;
+
+        $post->save();
+
 
 //        $post = new Article();
 //        $post->title = $request->title;
@@ -70,16 +80,9 @@ class ArticleController extends Controller
 //        $post->user_id = Auth::user()->id;
 //        $post->category_id = 1;
 //        $post->save();
+
 //        $input = $request->except('_token');
-        Article::create($request->all());
-//        $request->validate([
-//            'title' => 'required|max:100',
-//            'body' => 'required',
-//            'img' => 'required',
-//            'user_id' => Auth::user()->id,
-//        ]);
-//
-//        Article::create($request->all());
+//        $post = Article::create($request->all());
 //
         return redirect('/article')->with('success', 'Article ajouté!');
     }

@@ -14,8 +14,10 @@
 
 
                 <div class="flex justify-center flex-wrap items-center">
-                    <form class="w-full max-w-lg p-6" method="post" action="{{route('articles.store')  }}"
-                          enctype="multipart/form-data">
+                    <form class="w-full max-w-lg p-6" method="post" action="{{ route('articles.store')  }}"
+                    >
+
+                        @csrf
                         <div class="flex flex-wrap -mx-3 mb-6">
                             <div class="w-full px-3">
                                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
