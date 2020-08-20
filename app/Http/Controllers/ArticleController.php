@@ -60,15 +60,18 @@ class ArticleController extends Controller
         ]);
 //        $post->img = request()->file('img')->store('public/img');
 
+        $data = $request->input();
 
         $file = $request->file('img');
         $name = $file->getClientOriginalName();
         $file->move(public_path() . '/img/', $name);
 
         $post = new Article();
-        $post->title = request('title');
-        $post->body = request('body');
-//        $post->img = $name;
+        $post->title = $data['title'];
+        $post->body = $data['body'];
+
+
+        $post->img = $data['name'];
 
         $post->save();
 
