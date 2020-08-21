@@ -15,7 +15,7 @@
 
                 <div class="flex justify-center flex-wrap items-center">
                     <form class="w-full max-w-lg p-6" method="post" action="{{ route('articles.store')  }}"
-                    >
+                          enctype="multipart/form-data" >
 
                         @csrf
                         <div class="flex flex-wrap -mx-3 mb-6">

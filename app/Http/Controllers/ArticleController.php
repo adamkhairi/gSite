@@ -60,18 +60,20 @@ class ArticleController extends Controller
         ]);
 //        $post->img = request()->file('img')->store('public/img');
 
-        $data = $request->input();
+//        $data = $request->input();
 
         $file = $request->file('img');
         $name = $file->getClientOriginalName();
+
         $file->move(public_path() . '/img/', $name);
 
         $post = new Article();
-        $post->title = $data['title'];
-        $post->body = $data['body'];
+        $post->title = $request->title;
+        $post->body = $request->body;
+        $post->img = '/img/' . $name;
+        $post->user_id = Auth::user()->id;
+        $post->category_id = 1;
 
-
-        $post->img = $data['name'];
 
         $post->save();
 
@@ -87,13 +89,12 @@ class ArticleController extends Controller
 //        $input = $request->except('_token');
 //        $post = Article::create($request->all());
 //
-        return redirect('/article')->with('success', 'Article ajouté!');
+        return redirect('/articles')->with('success', 'Article ajouté!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param Article $article
      * @param int $id
      * @return Application|Factory|Response|View
      */
@@ -170,8 +171,9 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        $post = Article::findOrFail($id)->delete();
-
+        $art = Article::findOrFail($id);
+        $art->delete();
+//        dd($art);
         return redirect()->route('articles.index')->with('success', 'Articles deleted successfully');
     }
 

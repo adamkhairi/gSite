@@ -26,6 +26,10 @@ body {
 .img-art {
     min-width: 300px;
     }
+.article-img{
+    height: 22rem;
+    overflow: hidden;
+    }
 
 #header {
     background: url("/img/breadcrumb.png") no-repeat center;

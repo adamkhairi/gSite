@@ -3,8 +3,10 @@
 use App\Article;
 use App\Category;
 use App\Comment;
+use App\User;
 use Faker\Factory;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -36,11 +38,11 @@ class DatabaseSeeder extends Seeder
 //                'genre' => $faker->boolean,
 //                'password' => Hash::make('123456')
 //            ]);
-//            Comment::create([
-//                'body' => $faker->sentence,
-//                'user_id' => value(1),
-//                'article_id' => value(1),
-//            ]);
+            Comment::create([
+                'body' => $faker->sentence,
+                'user_id' => value(1),
+                'article_id' => value(1),
+            ]);
 //            Category::create([
 //                'name' => $faker->colorName,
 //

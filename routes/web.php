@@ -54,7 +54,7 @@ Route::resource('/articles', 'ArticleController')->names([
     'create' => 'articles.create',
     'update' => 'articles.update',
     'edit' => 'articles.edit',
-    'delete' => 'articles.destroy'
+    'destroy' => 'articles.destroy'
 ]);
 
 //Route::post('/article/{id}/edit', [
@@ -72,7 +72,7 @@ Route::resource('/articles', 'ArticleController')->names([
 
 
 
-Route::post('article/{id}/comment/add', [
+Route::post('articles/{id}/comment/add', [
     'uses' => 'CommentsController@store',
     'as' => 'comment.store'
 ]);
