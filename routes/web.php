@@ -29,11 +29,12 @@ Route::get('/contact', function (){
     return view('user.contact');
 })->name('contact');
 
-
+//Route::get('/login','LoginController@login')->name('login');
 
 Route::prefix('user')->group(function (){
     Route::get('/profile',function (){
         return view('user.profile') ;
+
     })->name('user.profile');
 });
 

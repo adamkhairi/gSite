@@ -248,7 +248,7 @@
 
                 @endif
             @else
-                <a href="{{route('user.login')}}" class="px-4 py-1 m-2 ">connecter vous pour commenter</a>
+                <a href="{{route('user.profile')}}" class="px-4 py-1 m-2 ">connecter vous pour commenter</a>
             @endauth
 
 
