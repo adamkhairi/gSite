@@ -82,7 +82,7 @@
 
 
                 <div class="bg-gray-200">
-                    {{ $posts->links('vendor.pagination.livewire-tailwind') }}
+                    {{ $posts->links() }}
                 </div>
             </div>
 
