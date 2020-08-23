@@ -49,7 +49,7 @@ class LoginController extends Controller
 
         if (auth()->attempt(array('email' => $input['email'], 'password' => $input['password']))) {
             if (auth()->user()->is_admin == 1) {
-                return redirect()->route('admin.home');
+                return redirect()->route('admin.profile');
             } else {
                 return redirect()->route('home');
             }
@@ -57,13 +57,12 @@ class LoginController extends Controller
             return redirect()->route('login')
                 ->with('error', 'Email-Address And Password Are Wrong.');
         }
-
     }
 
     /**
      * Log the user out of the application.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function logout(Request $request)

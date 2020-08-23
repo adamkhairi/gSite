@@ -16,7 +16,8 @@
                 <div class=" bg-white p-2">
 
                     <img src="/img/account.png" width="120"
-                         class="rounded-full border border-gray-300 shadow-lg bg-white mx-auto text-center  -mt-20" alt="">
+                         class="rounded-full border border-gray-300 shadow-lg bg-white mx-auto text-center  -mt-20"
+                         alt="">
 
                     <h1 class="text-center capitalize text-2xl text-black font-title pt-4">
                         @auth()
@@ -206,10 +207,14 @@
 
 
                     </section>
-<section>
-    @include('user.edit')
-</section>
-                    <section id="editSec"
+
+
+                    <section id="editSec" class="hidden row-span-2 col-start-2 col-span-4  lg:col-span-5 p-2 bg-gray-900 rounded-md">
+                        @include('user.edit')
+                    </section>
+
+
+                    <section
                              class=" hidden row-span-2 col-start-2 col-span-4  lg:col-span-5 p-2 bg-gray-900 rounded-md">
                         <form action="" method="post" class="">
                             <div class="flex flex-col justify-center items-center">
@@ -232,7 +237,8 @@
                                 <div class="flex items-center justify-center">
                                     <label class="pr-6 p-2" for="birthday">Age</label>
 
-                                    <input type="date" name="birthday" id="birthday" value="{{ Auth::user()->birthday }}">
+                                    <input type="date" name="birthday" id="birthday"
+                                           value="{{ Auth::user()->birthday }}">
                                 </div>
 
 
@@ -285,5 +291,9 @@
         @endif
     @endauth
 
+
+@endsection
+@section('scripts')
+    <script src="{{ asset('js/sideBar.js') }}" defer></script>
 
 @endsection

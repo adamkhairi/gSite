@@ -1,10 +1,11 @@
-<section>
+<form action="" class="w-full">
 
-    <form action="">
+    @csrf
 
-        @csrf
-
+    <div class="flex justify-center items-center p-4">
         <div>
+
+
             <div class="flex">
                 <div class="mr-4 flex flex-col">
                     <label for="name">Name</label>
@@ -32,9 +33,9 @@
                     <input class="mt-2" type="text" name="email" id="email" value="">
                 </div>
             </div>
-
-
-
         </div>
-    </form>
-</section>
+
+
+    </div>
+</form>
+

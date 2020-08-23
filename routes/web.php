@@ -38,7 +38,7 @@ Route::prefix('user')->group(function (){
     })->name('user.profile');
 });
 
-Route::prefix('Admin')->group(function () {
+Route::prefix('admin')->group(function () {
 
     Route::get('/profile', function () {
         return view('admin.adminHome');
@@ -47,7 +47,9 @@ Route::prefix('Admin')->group(function () {
     Route::get('/home', 'HomeController@adminHome')->name('admin.home')->middleware('is_admin');
 
 });
-Route::get('/logout', 'LoginController@logout')->name('logout');
+
+//Route::get('/login', 'auth\LoginController@login')->name('login');
+//Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //ARTICLE
 Route::resource('/articles', 'ArticleController')->names([
