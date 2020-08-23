@@ -20,7 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2af095d3-3e56-4b85-8abb-f284e8cf9773" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,8 +212,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.watch" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -227,6 +237,7 @@
       <workItem from="1597783646271" duration="799000" />
       <workItem from="1597848615568" duration="4527000" />
       <workItem from="1597948087547" duration="3269000" />
+      <workItem from="1598024484317" duration="4497000" />
     </task>
     <task id="LOCAL-00001" summary="Single Articles page">
       <created>1597695383395</created>
@@ -294,22 +305,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="184" y="87" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597685496485" />
-    <state width="1877" height="186" key="GridCell.Tab.0.bottom" timestamp="1597782979956">
+    <state width="916" height="187" key="GridCell.Tab.0.bottom" timestamp="1598040153980">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597782979956" />
-    <state width="1877" height="186" key="GridCell.Tab.0.center" timestamp="1597782979956">
+    <state width="916" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598040153980" />
+    <state width="916" height="187" key="GridCell.Tab.0.center" timestamp="1598040153980">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="186" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597782979956" />
-    <state width="1877" height="186" key="GridCell.Tab.0.left" timestamp="1597782979956">
+    <state width="916" height="187" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598040153980" />
+    <state width="916" height="187" key="GridCell.Tab.0.left" timestamp="1598040153980">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="186" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597782979956" />
-    <state width="1877" height="186" key="GridCell.Tab.0.right" timestamp="1597782979956">
+    <state width="916" height="187" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598040153980" />
+    <state width="916" height="187" key="GridCell.Tab.0.right" timestamp="1598040153980">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="186" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597782979956" />
+    <state width="916" height="187" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598040153980" />
     <state x="792" y="264" key="RollbackChangesDialog" timestamp="1597685497984">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

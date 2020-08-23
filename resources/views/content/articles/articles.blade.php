@@ -81,8 +81,8 @@
                 {{--                ***************--}}
 
 
-                <div class="bg-gray-200 font-bold flex">
-                    {!! $posts->links() !!}
+                <div class="bg-gray-200">
+                    {{ $posts->links('vendor.pagination.livewire-tailwind') }}
                 </div>
             </div>
 
