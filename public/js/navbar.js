@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -118,14 +118,14 @@ $(function () {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!**************************************!*\
   !*** multi ./resources/js/navbar.js ***!
   \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\gSite\resources\js\navbar.js */"./resources/js/navbar.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\gSite\resources\js\navbar.js */"./resources/js/navbar.js");
 
 
 /***/ })

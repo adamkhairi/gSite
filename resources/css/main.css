@@ -3,45 +3,57 @@ body {
     font-family: "Cairo", sans-serif;
     color: white;
     box-sizing: border-box;
-    }
+}
 
+.booth {
+    width: 700px;
+    background: #cbd5e0;
+    border: 10px solid #a0aec0;
+    margin: 0 auto;
+}
 #header {
     background: url("/img/breadcrumb.png") no-repeat center;
-    }
+}
 
 .font-title {
     font-family: "Aclonica", sans-serif;
-    }
+}
 /**/
 .btn-gardiant {
-    background: -moz-linear-gradient(left,
-    rgba(198, 1, 155, 1) 0%,
-    rgba(255, 1, 1, 1) 100%);
-    background: -webkit-linear-gradient(left,
-    rgba(198, 1, 155, 1) 0%,
-    rgba(255, 1, 1, 1) 100%);
-    background: linear-gradient(to right,
-    rgba(198, 1, 155, 1) 0%,
-    rgba(255, 1, 1, 1) 100%);
-    }
+    background: -moz-linear-gradient(
+        left,
+        rgba(198, 1, 155, 1) 0%,
+        rgba(255, 1, 1, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        rgba(198, 1, 155, 1) 0%,
+        rgba(255, 1, 1, 1) 100%
+    );
+    background: linear-gradient(
+        to right,
+        rgba(198, 1, 155, 1) 0%,
+        rgba(255, 1, 1, 1) 100%
+    );
+}
 
 .btn-gardiant:hover {
     background: #ff0101;
-    }
+}
 
 .img-art {
     min-width: 300px;
-    }
-.article-img{
+}
+.article-img {
     height: 22rem;
     overflow: hidden;
-    }
+}
 
 #header {
     background: url("/img/breadcrumb.png") no-repeat center;
-    }
+}
 
 #lastSecAct {
     background: url("/img/lastSec.png") no-repeat center;
     padding: 4em;
-    }
+}

@@ -81,78 +81,44 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/main.js":
-/*!******************************!*\
-  !*** ./resources/js/main.js ***!
-  \******************************/
+/***/ "./resources/js/video.js":
+/*!*******************************!*\
+  !*** ./resources/js/video.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// var owl = $('.owl-carousel');
-// owl.owlCarousel({
-//
-// 	center: true,
-// 	items: 6,
-// 	loop: true,
-// 	margin: 10,
-// 	autoplay: true,
-// 	responsive: {
-// 		0: {
-// 			items: 1
-// 		},
-// 		600: {
-// 			items: 2
-// 		},
-// 		1000: {
-// 			items: 3
-// 		}
-// 	},
-//
-// 	autoplayTimeout: 3000,
-//
-//
-//
-// 	autoplayHoverPause: true
-// });
-// $('.play').on('click', function () {
-// 	owl.trigger('play.owl.autoplay', [1000])
-// });
-// $('.stop').on('click', function () {
-// 	owl.trigger('stop.owl.autoplay')
-// });
-// ***********
-$(window).scroll(function (e) {
-  // $("#nav").addClass('bg-red-700');
-  var offsetRange = $(window).height() / 3,
-      offsetTop = $(window).scrollTop() + offsetRange + $("#header").outerHeight(true),
-      offsetBottom = offsetTop + offsetRange;
-  $("#exporevideo").each(function () {
-    var y1 = $(this).offset().top;
-    var y2 = offsetTop;
+(function () {
+  var video = document.getElementById("video"),
+      vendorUrl = window.URL || window.webkitURL;
+  navigator.getMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia; // Capture video
 
-    if (y1 + $(this).outerHeight(true) < y2 || y1 > offsetBottom) {
-      this.pause();
-    } else {
-      this.play();
-    }
+  navigator.getMedia({
+    video: true,
+    audio: false
+  }, function (stream) {
+    video.srcObject = stream;
+    video.play();
+  }, function (error) {//An error occured
+    //error.code
   });
-});
+})();
 
 /***/ }),
 
-/***/ 2:
-/*!************************************!*\
-  !*** multi ./resources/js/main.js ***!
-  \************************************/
+/***/ 1:
+/*!*************************************!*\
+  !*** multi ./resources/js/video.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\gSite\resources\js\main.js */"./resources/js/main.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\gSite\resources\js\video.js */"./resources/js/video.js");
 
 
 /***/ })

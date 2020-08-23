@@ -89,68 +89,9 @@
             <h1 class="pb-3 text-2xl font-title border-b-2 border-bg-white">live stream</h1>
         </div>
         <div class="flex flex-row justify-center items-center p-2 ">
-            <div class="">
-                <video class="" id=""
-                       autoplay
-                       loop
-                       preload="auto"
-                       muted
-                       playsinline
-                >
-                    <source src="img/vid1.mp4" type="video/mp4"/>
-                </video>
-            </div>
-            <div class="w-11/12 grid grid-rows-2 grid-cols-2 gap-4 p-4">
-
-                <video id=""
-                       autoplay
-                       loop
-                       preload="auto"
-                       muted
-                       playsinline
-                       class="col-start-1"
-                >
-                    <source src="img/vid1.mp4" type="video/mp4"/>
-                </video>
-
-
-                <video id=""
-                       autoplay
-                       loop
-                       preload="auto"
-                       muted
-                       playsinline
-                       class="col-start-2"
-
-                >
-                    <source src="img/vid1.mp4" type="video/mp4"/>
-                </video>
-
-
-                <video id=""
-                       autoplay
-                       loop
-                       preload="auto"
-                       muted
-                       playsinline
-                       class="col-start-1"
-
-                >
-                    <source src="img/vid1.mp4" type="video/mp4"/>
-                </video>
-
-
-                <video id=""
-                       autoplay
-                       loop
-                       preload="auto"
-                       muted
-                       playsinline
-                       class="col-start-2"
-
-                >
-                    <source src="img/vid1.mp4" type="video/mp4"/>
-                </video>
+            <div class="booth">
+                <video id="video" width="700" height="400" autoplay></video>
+</div>
 
             </div>
 

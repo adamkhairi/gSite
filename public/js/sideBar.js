@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -134,14 +134,14 @@ msg_btn.addEventListener('click', function (event) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!***************************************!*\
   !*** multi ./resources/js/sideBar.js ***!
   \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\gSite\resources\js\sideBar.js */"./resources/js/sideBar.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\gSite\resources\js\sideBar.js */"./resources/js/sideBar.js");
 
 
 /***/ })
