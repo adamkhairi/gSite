@@ -60,10 +60,10 @@ Route::resource('/articles', 'ArticleController')->names([
     'destroy' => 'articles.destroy'
 ]);
 
-//Route::post('/article/{id}/edit', [
-//    'uses' => 'ArticleController@update',
-//    'as' => 'article.update'
-//]);
+Route::post('/article/{id}/edit', [
+    'uses' => 'ArticleController@update',
+    'as' => 'article.update'
+]);
 //Route::get('/article/{id}/delete', [
 //    'uses' => 'ArticleController@destroy',
 //    'as' => 'article.delete'

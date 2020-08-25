@@ -19,16 +19,16 @@
     @endauth
 
 
-    <section class="w-full mt-16 w-40">
+    <section class="w-full mt-16">
 
         <div class="flex justify-center flex-wrap">
-            <div class="flex flex-col md:w-2/2 w-100 px-6 h-full overflow-hidden  ">
+            <div class="flex flex-col lg:w-2/3 w-full px-6 h-full overflow-hidden  ">
 
                 {{--                *******************--}}
                 @foreach ($posts as $post)
 
-                    <div class="pb-4 col-span-8 select-none">
-                        <div class="max-w-xl rounded overflow-hidden shadow-lg bg-white">
+                    <div class="pb-4 col-span-8 select-none w-full">
+                        <div class="max-w-xl rounded overflow-hidden  w-full shadow-lg bg-white">
                             <a href="{{ route('articles.show',$post->id) }}">
                                 <div class="article-img">
                                     <img class="w-full overflow-hidden" src="{{ $post->img }}"
@@ -55,7 +55,7 @@
                                         <div class="flex">
                                             <div>
                                                 <a class="btn-gardiant rounded-full px-4 py-1"
-                                                   href="{{route('articles.edit',$post->id)}}">
+                                                   href="{{route('articles.edit',[$post->id])}}">
                                                     UPDATE
                                                 </a>
                                             </div>

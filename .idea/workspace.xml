@@ -6,6 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2af095d3-3e56-4b85-8abb-f284e8cf9773" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
@@ -15,6 +16,11 @@
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +31,14 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="FF_ONLY" />
+        <option value="NO_VERIFY" />
+      </set>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -255,6 +269,8 @@
       <workItem from="1598107622955" duration="243000" />
       <workItem from="1598140535308" duration="588000" />
       <workItem from="1598195042216" duration="2361000" />
+      <workItem from="1598286559161" duration="866000" />
+      <workItem from="1598368928865" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="Single Articles page">
       <created>1597695383395</created>

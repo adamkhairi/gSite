@@ -239,12 +239,16 @@
                         Modifier
                     </a>
                     {{--                        </form>--}}
-                    <a href="
-                            {{route('articles.destroy',[$post->id])}}
-                        "
-                       class="px-4 py-1 m-2 rounded btn-gardiant">
-                        Supprimer
-                    </a>
+                    <div>
+                        <form action="{{ route('articles.destroy',$post->id) }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            {{ method_field('DELETE') }}
+                            <button type="submit" class="btn-gardiant rounded-full px-4 py-1"
+                            >
+                                Delete
+                            </button>
+                        </form>
+                    </div>
 
                 @endif
             @else
