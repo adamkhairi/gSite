@@ -28,61 +28,7 @@
             {{--                *******************--}}
             @foreach ($posts as $post)
 
-                {{--                    <div class="pb-4 col-span-8 select-none w-full">--}}
-                {{--                        <div class="max-w-xl rounded overflow-hidden  w-full shadow-lg bg-white">--}}
-                {{--                            <a href="{{ route('articles.show',$post->id) }}">--}}
-                {{--                                <div class="article-img">--}}
-                {{--                                    <img class="w-full overflow-hidden" src="{{ $post->img }}"--}}
-                {{--                                         alt="Sunset in the mountains">--}}
-                {{--                                </div>--}}
-                {{--                            </a>--}}
-                {{--                            <div class="px-6 py-4">--}}
-
-                {{--                                <div class="relative">--}}
-                {{--                                    <a href="{{ route('articles.show',$post->id) }}">--}}
-
-                {{--                                        <h1 class="font-title text-2xl mb-2 text-center text-black">--}}
-                {{--                                            {{ $post->title }}--}}
-                {{--                                        </h1>--}}
-                {{--                                    </a>--}}
-                {{--                                    <p class="pr-6 text-black overflow-hidden break-words h-16">--}}
-                {{--                                        {{$post->body}}--}}
-                {{--                                    </p>--}}
-
-
-                {{--                                    <a class="float-right btn-gardiant rounded px-4 py-1 m-2 relative bottom-0 right-0"--}}
-                {{--                                       href="{{ route('articles.show',$post->id) }}">voir plus...</a>--}}
-                {{--                                </div>--}}
-
-
-                {{--                                @auth()--}}
-                {{--                                    @if(auth()->user()->is_admin)--}}
-                {{--                                        <div class="flex">--}}
-                {{--                                            <div>--}}
-                {{--                                                <a class="btn-gardiant rounded-full px-4 py-1"--}}
-                {{--                                                   href="{{route('articles.edit',[$post->id])}}">--}}
-                {{--                                                    UPDATE--}}
-                {{--                                                </a>--}}
-                {{--                                            </div>--}}
-
-                {{--                                            <div>--}}
-                {{--                                                <form action="{{ route('articles.destroy',$post->id) }}" method="POST"--}}
-                {{--                                                      enctype="multipart/form-data">--}}
-                {{--                                                    @csrf--}}
-                {{--                                                    {{ method_field('DELETE') }}--}}
-                {{--                                                    <button type="submit" class="btn-gardiant rounded-full px-4 py-1"--}}
-                {{--                                                    >--}}
-                {{--                                                        Delete--}}
-                {{--                                                    </button>--}}
-                {{--                                                </form>--}}
-                {{--                                            </div>--}}
-                {{--                                        </div>--}}
-                {{--                                    @endif--}}
-                {{--                                @endauth--}}
-                {{--                            </div>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-
+                {{--                ARTICLES--}}
                 <article class="flex flex-col shadow my-4">
                     <!-- Article Image -->
                     <a href="{{ route('articles.show',$post->id) }}" class="hover:opacity-75">
@@ -110,37 +56,39 @@
                             Reading
                             <i class="fas fa-long-arrow-alt-right pl-2"></i>
                         </a>
-                    @auth()
-                        @if(auth()->user()->is_admin)
-                            <div class="flex">
-                                <div>
-                                    <a type="button" class="btn-gardiant rounded-full px-4 py-1"
-                                       href="{{route('articles.edit',[$post->id])}}">
-                                        UPDATE
-                                    </a>
-                                </div>
 
-                                <div>
-                                    <form action="{{ route('articles.destroy',$post->id) }}" method="POST"
-                                          enctype="multipart/form-data">
-                                        @csrf
-                                        {{ method_field('DELETE') }}
-                                        <button type="submit" class="btn-gardiant rounded-full px-4 py-1"
-                                        >
-                                            Delete
-                                        </button>
-                                    </form>
+                        {{--                        ARTICLE MANAGE--}}
+                        @auth()
+                            @if(auth()->user()->is_admin)
+                                <div class="flex">
+                                    <div>
+                                        <a type="button" class="btn-gardiant rounded-full px-4 py-1"
+                                           href="{{route('articles.edit',[$post->id])}}">
+                                            UPDATE
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <form action="{{ route('articles.destroy',$post->id) }}" method="POST"
+                                              enctype="multipart/form-data">
+                                            @csrf
+                                            {{ method_field('DELETE') }}
+                                            <button type="submit" class="btn-gardiant rounded-full px-4 py-1"
+                                            >
+                                                Delete
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                        @endif
-                    @endauth
+                            @endif
+                        @endauth
                     </div>
 
                 </article>
             @endforeach
 
 
-
+            {{--PAGINATION--}}
             <div class="bg-gray-200">
                 {{ $posts->links() }}
             </div>
